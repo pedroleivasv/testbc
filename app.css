@@ -12,7 +12,7 @@ body {
 }
 
 .welcome-text {
-    background-image: url(/Users/jdalas/Documents/Museum-of-Candy-master/imgs/background.webp);
+    background-image: url(imgs/background.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
