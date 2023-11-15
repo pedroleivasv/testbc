@@ -1,10 +1,18 @@
 body {
     background: white;
-    font-family: "Nunito", sans-serif;
+    font-family: "Futura", sans-serif;
+}
+.logo{
+     max-width: 180px;
+      box-sizing: border-box;
+      padding: 10px;
+      max-height: 75px;
+      width: auto;
+      height: auto;
 }
 
 .welcome-text {
-    background-image: url(/Users/jdalas/Documents/Museum-of-Candy-master/imgs/fondo.png);
+    background-image: url(imgs/background.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -18,23 +26,35 @@ body {
 .Titulo {
     margin-left: 35%;
 }
-
+.badge1 {
+    display: inline-block;
+    max-width: 150px;
+}
+.badge2 {
+    display: inline-block;
+    max-width: 120px;
+}
 .Titulo-texto {
-    color: black;
+    color: white;
     opacity: 1;
 }
 
 .blurb h2 {
    color: black;
-   font-weight: 100;
+   font-weight: normal;
    font-size: 2.5rem;
 }
 
 .blurb p {
     color: black;
-    font-weight: 100;
+    font-weight: lighter;
     font-size: 1.125rem;
     line-height: 2;
+}
+
+.obtener {
+    text-align: left;
+    font-weight: 100;
 }
 
 .content {
@@ -42,6 +62,13 @@ body {
     margin-bottom: 100px;
 }
 
+.logo-foot{
+    max-width: 325px;
+}
+
+.texto-foot{
+    font-weight: lighter;
+}
 
 #mainNavbar {
     font-size: 1.5rem;
@@ -53,7 +80,7 @@ body {
 }
 
 #mainNavbar .nav-link:hover {
-    color: #EA1C2C;
+    color: #5EB3E4;
 }
 
 #mainNavbar .navbar-brand {
@@ -71,7 +98,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgb(255,165,0);
+    background: rgb(0,58,112);
     transition: background 500ms;
 }
 
