@@ -3,16 +3,31 @@ body {
     font-family: "Futura", sans-serif;
 }
 .logo{
-     max-width: 180px;
+     max-width: 300px;
       box-sizing: border-box;
       padding: 10px;
-      max-height: 75px;
+      max-height: 100px;
       width: auto;
       height: auto;
 }
 
+
+
+.welcome-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0,0,0,.5); 
+    
+}
+
 .welcome-text {
-    background-image: url(imgs/background.webp);
+    position: relative;
+    background-image: url(imgs/background.webp); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -39,20 +54,47 @@ body {
     opacity: 1;
 }
 
+#titulo-naranja {
+    font-size: 2.75rem;
+    color: #F18A00;
+}
+
+#titulo-celeste {
+    font-size: 3rem;
+    color: #5EB3E4;
+}
+
+#titulo-blanco {
+    font-size: 8rem;
+}
+
+#titulo-blanco2 {
+    font-size: 6rem;
+}
+
 .blurb h2 {
-   color: black;
+   color: #0075C9;
    font-weight: normal;
    font-size: 2.5rem;
 }
 
+.cuadro-1{
+    
+}
+
+.cuadro-2{
+    background-image: url(imgs/cuadro2.webp);
+}
+
 .blurb p {
-    color: black;
+    color: #828282;
     font-weight: lighter;
     font-size: 1.125rem;
     line-height: 2;
 }
 
 .obtener {
+     color: #828282;
     text-align: left;
     font-weight: 100;
 }
@@ -60,14 +102,20 @@ body {
 .content {
     margin-top: 100px;
     margin-bottom: 100px;
+    height: 800px;
 }
 
+
 .logo-foot{
-    max-width: 325px;
+    max-width: 575px;
 }
 
 .texto-foot{
     font-weight: lighter;
+}
+
+.gris {
+    background-color: #F2F2F2;
 }
 
 #mainNavbar {
@@ -102,7 +150,37 @@ body {
     transition: background 500ms;
 }
 
+#navLinks:collapse {
+     background: rgb(0,58,112);
+}
+
 @media (max-width: 1200px) {
+    nav.navbar{
+    background: rgb(0,58,112);
+  }
+    .logo{
+     max-width: 200px;
+      box-sizing: border-box;
+      padding: 10px;
+      max-height: 100px;
+      width: auto;
+      height: auto;
+}
+    #titulo-naranja {
+    font-size: 1.4rem;
+    color: #F18A00;
+    }
+    #titulo-celeste {
+    font-size: 1.5rem;
+    color: #5EB3E4;
+    }
+    #titulo-blanco {
+	font-size: 4rem;
+    }
+
+    #titulo-blanco2 {
+	font-size: 3rem;
+    }
     #headingGroup h1 {
         font-weight: 100;
         font-size: 3rem;
@@ -110,6 +188,14 @@ body {
     .blurb h2 {
         font-size: 2rem;
     }
+
+    .section-foot {
+	display: block;
+	margin-top: 500px;
+    }
+    .logo-foot{
+    max-width: 325px;
+    } 
 }
 
 
