@@ -1,6 +1,8 @@
 body {
     background: white;
-    font-family: "Futura", sans-serif;  
+    font-family: "Futura", sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .logo{
      max-width: 500px;
@@ -20,9 +22,7 @@ body {
 
 }
 
-.nav-item-boton {
-    margin-left: 25px;
-}
+
 
 .welcome-text::before {
     content: "";
@@ -88,11 +88,12 @@ body {
 }
 
 .cuadro-1{
-    
+
+
 }
 
 .cuadro-2{
-    background-image: url(imgs/cuadro2.webp);
+
 }
 
 .blurb p {
@@ -100,6 +101,7 @@ body {
     font-weight: bolder;
     font-size: 1.125rem;
     line-height: 2;
+    
 }
 
 .obtener {
@@ -137,7 +139,7 @@ body {
 
 #mainNavbar .nav-link {
     color: white;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 #mainNavbar .nav-link:hover {
@@ -167,8 +169,14 @@ body {
     transition: background 500ms;
 }
 
+.nav-item-boton {
+    margin-left: 25px;
+    
+}
 
-
+.nav-item-boton button {
+    font-size: 1.5rem;  
+}
 
 @media (max-width: 1200px) {
     .navbar-collapse {
@@ -191,6 +199,7 @@ body {
       height: auto;
     }
     .nav-item-boton {
+	font-size: 1.5rem;
 	margin-left: 0px;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -229,6 +238,10 @@ body {
     .logo-foot{
     max-width: 325px;
     }
+    .foot-div {
+	font-size: 0.7rem
+    }
+    
 }
 
 
